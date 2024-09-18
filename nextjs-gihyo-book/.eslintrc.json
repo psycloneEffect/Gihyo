@@ -1,0 +1,36 @@
+{
+  "extends": [
+    "next",
+    "next/core-web-vitals",
+    "eslint:recommendend",
+    "plugin:prettier/recommendend",
+    "plugin:react/recommendend",
+    "plugin:react-hooks/recommendend",
+    "plugin:@typescript-eslint/recommendend",
+    "plugin:import/recommendend",
+    "plugin:import/typescript",
+    "plugin:storybook/recommended"
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "import/order": [
+      2,
+      {
+        "alphabetize": {
+          "order": "asc"
+        }
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "endOfLine": "lf",
+        "semi": false,
+        "singleQuote": true,
+        "printWidth": 80,
+        "tabWidth": 2
+      }
+    ]
+  }
+}
